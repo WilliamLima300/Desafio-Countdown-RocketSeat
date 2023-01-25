@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/top-image.svg" alt="Imagem de topo na cor cinza">
+    </header>
+
+    <main>
+        <div class="group">
+            <h1>PRONTO PARA LANÇAMENTO EM...</h1>
+
+            <div class="group-count">
+                <div class="countdown">
+                    <span>Dias</span>
+                    <p id="countdowndays"></p>
+                </div>
+    
+                <div class="countdown">
+                    <span>Horas</span>
+                    <p id="countdownhours"></p>
+                </div>
+                
+                <div class="countdown">
+                    <span>Minutos</span>
+                    <p id="countdownminutes"></p>
+                </div>
+                
+                <div class="countdown">
+                    <span>Segundos</span>
+                    <p id="countdownseconds"></p>
+                </div>
+            </div>
+
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+
+            <div class="button">
+                <button id="button">Enviar</button>
+            </div>
+            
+            
+        </div>
+
+        <div class="rocket">
+            <img src="./images/rocket.svg" alt="Imagem de foguete">
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <img src="./images/bottom-image.svg" alt="Imagem de rodapé na cor cinza">
+    </footer>
+
+   
+
+    <div class="modal invisible">
+        <form>
+            <div class="close">X</div>
+            <input type="text" id="name" placeholder="Seu nome" size="30" required>
+            <input type="tel" id="tel" placeholder="(xx) xxxxx-xxxx" size="30" required>
+            <input type="email" id="email" placeholder="oi@rocketseat.com" pattern=".+@globex\.com" size="30" required>
+            <div class="button">
+                <button id="send">Inscreva-se</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+
+    
+</body>
+</html>

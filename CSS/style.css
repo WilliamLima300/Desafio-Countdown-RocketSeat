@@ -1,0 +1,189 @@
+/* Adicionar variaveis para pagina */
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Zerar margin padding e adicionando boxsizing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* adicionar tamanhos para body */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* adicionar estilo ao header */
+header{
+    width: 100%;
+}
+/* adicionar estilo para imagem de topo */
+header img{
+    width: 100%;
+    
+}
+
+/* adicionar estilo a tag main */
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+/* adicionar espeficiçações da div countdown */
+.group{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.group h1{
+    color:var(--purple);
+    margin: 10px auto;
+}
+
+.group p{
+    color:var(--text-color);
+    margin: 10px auto;
+}
+
+.group-count{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown span{
+
+    color:var(--light-grey);
+    
+}
+
+.countdown p{
+    font-size: 4em;
+    color: var(--black);
+}
+
+/* configuração do botão */
+
+.button{
+    margin: 15px auto;
+}
+
+.button button{
+    background-color: var(--purple);
+    color:#FFF;
+    padding:10px 12px;
+    border:none;
+    border-radius:5px;
+}
+
+.button button:hover{
+    cursor:pointer;
+    box-shadow:  10px 5px var(--text-color);
+}
+
+/* adicionar especificações da div rocket com a imagem */
+
+.rocket{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rocket img{
+    width: 80%;
+}
+
+/* adicionar estilo ao footer */
+footer{
+    width: 100%;
+    
+}
+/* adicionar estilo para imagem de rodapé */
+footer img{
+    width: 100%;
+    
+}
+
+.modal{
+    width: 50%;
+    height:50%;
+    padding:30px;
+    position:absolute;
+    z-index: 999;
+    right: 50%;
+    left: 30%;
+    top: 30%;
+    display: flex;
+}
+
+.modal form{
+    width: 80%;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal input{
+    margin: auto;
+    padding: 20px 8px;
+    border:0;
+    border-left: 5px solid var(--purple);
+    outline: 1px #6C63FF;
+}
+.close{
+    width: 24px; 
+    height: 24px; 
+    font-size: 8px; 
+    line-height: 24px;
+    text-align: center; 
+    position: relative; 
+    right: -98%; 
+    top: -12px; 
+    float: left; 
+    border-radius: 50%; 
+    border: 1px solid var(--light-grey); 
+    background-color: var(--purple); 
+    color: #FFF; 
+    transition: all 0.2s ease; 
+    cursor: pointer; 
+}
+
+.invisible{
+    display:none;
+}
+
+/* BREAKPOINTS */
+
+/* DISPOSITIVOS MEDIOS E PEQUENOS */
+
+@media only screen and (max-width: 600px) {
+   .countdown p{
+    font-size: 2.5em;
+   }
+  }
